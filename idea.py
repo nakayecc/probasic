@@ -1,13 +1,6 @@
 import getopt
 import sys
 
-def savef(text):
-    try:
-        with open('ideabank.txt', 'w', encoding = 'utf-8') as f:
-            f.write(text) 
-            f.close()
-    except IOError:
-        print (" IO Error")
 
 def show():
     print("Your ideabank: ")
@@ -22,9 +15,10 @@ def show():
 def add( idea):
     try:
         with open('ideabank.txt', 'a', encoding = 'utf-8') as f:
-            f.write('\n' + idea)
+            f.write(idea + "\n")
             f.close
     except IOError:
+
         print("Error: File does not appear to exist.")
 
 def dell(index):
