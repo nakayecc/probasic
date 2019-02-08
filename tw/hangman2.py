@@ -140,6 +140,8 @@ def restart():
         if res == "y":
             print("Restarting...")
             life = 6
+            prepareListsToGame("warszawa")
+            usedletterlist.clear()
             startGame()
         elif res == "n":
             print("Ok then... See ya!")
