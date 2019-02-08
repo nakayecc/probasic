@@ -1,13 +1,21 @@
 import sys
 
-def plus (a,b):
+
+def plus(a, b):
     return a+b
-def minus (a,b):
+
+
+def minus(a, b):
     return a-b
-def multiplication (a,b):
+
+
+def multiplication(a, b):
     return a*b
-def division (a,b):
+
+
+def division(a, b):
     return a/b
+
 
 num1 = None
 num2 = None
@@ -22,10 +30,10 @@ while True:
     num2 = int(input("Enter another number:"))
 
     if(op == "+"):
-       print("Result: " + str(plus(num1,num2)))
+        print("Result: " + str(plus(num1, num2)))
     if(op == "-"):
-       print("Result: " + str(minus(num1,num2)))
+        print("Result: " + str(minus(num1, num2)))
     if(op == "*"):
-       print("Result: " + str(multiplication(num1,num2)))
+        print("Result: " + str(multiplication(num1, num2)))
     if(op == "/"):
-       print("Result: " + str(division(num1,num2)))
+        print("Result: " + str(division(num1, num2)))
