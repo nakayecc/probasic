@@ -8,11 +8,11 @@ def army():
     try:
         val = int(input("How many units attack: "))
         while not (1 <= val <= 3):
-            print("select od 1-4")
+            print("select od 1-3")
             val = int(input("How many units attack: "))
         val2 = int(input("How many units attack: "))
         while not (1 <= val2 <= 2):
-            print("select 1-4")
+            print("select 1-2")
             val2 = int(input("How many units attack: "))
     except ValueError:
         print("select int values")
