@@ -31,7 +31,7 @@ def dell(index):
             for line in f:
                 counter = counter + 1
                 # print(line)
-                if(counter != index):
+                if (counter != index):
                     buffor.append(line)
         f.close()
         with open('ideabank.txt', 'w', encoding='utf-8') as k:
@@ -42,7 +42,7 @@ def dell(index):
 
 
 options, arg = getopt.getopt(sys.argv[1:], 'ld', ['list', 'delete'])
-if(len(sys.argv) > 1):
+if (len(sys.argv) > 1):
     for opt, arg in options:
         if opt in ('-l', '--list'):
             show()

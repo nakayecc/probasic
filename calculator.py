@@ -2,19 +2,19 @@ import sys
 
 
 def plus(a, b):
-    return a+b
+    return a + b
 
 
 def minus(a, b):
-    return a-b
+    return a - b
 
 
 def multiplication(a, b):
-    return a*b
+    return a * b
 
 
 def division(a, b):
-    return a/b
+    return a / b
 
 
 num1 = None
@@ -29,11 +29,11 @@ while True:
     op = input("Enter an operation:")
     num2 = int(input("Enter another number:"))
 
-    if(op == "+"):
+    if (op == "+"):
         print("Result: " + str(plus(num1, num2)))
-    if(op == "-"):
+    if (op == "-"):
         print("Result: " + str(minus(num1, num2)))
-    if(op == "*"):
+    if (op == "*"):
         print("Result: " + str(multiplication(num1, num2)))
-    if(op == "/"):
+    if (op == "/"):
         print("Result: " + str(division(num1, num2)))

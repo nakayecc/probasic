@@ -6,3 +6,5 @@ loot = [('mleko', 10)]
 print(inv.items())
 inv.update(loot)
 print(inv.items())
+
+result = []

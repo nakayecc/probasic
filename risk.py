@@ -32,19 +32,19 @@ def roll():
 def fight(val1, val2, attacker, defender):
     deflost = 0
     attlost = 0
-    if(val1 > val2):
+    if (val1 > val2):
         min = val2
     else:
         min = val1
 
     for x in range(min):
-        if(attacker[x] > defender[x]):
+        if (attacker[x] > defender[x]):
             deflost = deflost + 1
-        elif(defender[x] >= attacker[x]):
+        elif (defender[x] >= attacker[x]):
             attlost = attlost + 1
     return deflost, attlost
 
- 
+
 val, val2 = army()
 roll()
 print("Dice: ")
